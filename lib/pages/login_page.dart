@@ -44,12 +44,12 @@ class _LoginPageState extends State<LoginPage> {
       //WRONG EMAIL
       if (e.code == 'user-not-found') {
         //show error to user
-        wrongEmailMessage();
+        // wrongEmailMessage();
 
         //WRONG PASSWORD
       } else if (e.code == 'wrong password') {
         //show error to user
-        wrongPasswordMessage();
+        //  wrongPasswordMessage();
       }
     }
 
@@ -57,30 +57,30 @@ class _LoginPageState extends State<LoginPage> {
     //Navigator.pop(context);
   }
 
-  //WRONG EMAIL MESSAGE POPUP
-  void wrongEmailMessage() {
-    showAboutDialog(
-      context: context,
-      builder: (context) {
-        return const AlertDialog(
-          title: Text('Incorrect Email'),
-        );
-      },
-    );
-  }
+  // //WRONG EMAIL MESSAGE POPUP
+  // void wrongEmailMessage() {
+  //   showAboutDialog(
+  //     context: context,
+  //     builder: (context) {
+  //       return const AlertDialog(
+  //         title: Text('Incorrect Email'),
+  //       );
+  //     },
+  //   );
+  // }
 
-  //WRONG PASSWORD MESSAGE POPUP
-  void wrongPasswordMessage() {
-    showAboutDialog(
-      context: context,
-      builder: (context)
-       {
-        return const AlertDialog(
-          title: Text('Incorrect Password'),
-        );
-      },
-    );
-  }
+  // //WRONG PASSWORD MESSAGE POPUP
+  // void wrongPasswordMessage() {
+  //   showAboutDialog(
+  //     context: context,
+  //     builder: (context)
+  //      {
+  //       return const AlertDialog(
+  //         title: Text('Incorrect Password'),
+  //       );
+  //     },
+  //   );
+  // }
 
   @override
   Widget build(BuildContext context) {
